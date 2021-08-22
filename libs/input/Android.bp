@@ -279,7 +279,6 @@ cc_library {
     sanitize: {
         undefined: true,
         all_undefined: true,
-        misc_undefined: ["integer"],
     },
 
     static_libs: [
