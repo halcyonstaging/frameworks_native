@@ -793,6 +793,8 @@ VkResult GetPhysicalDeviceSurfaceFormatsKHR(VkPhysicalDevice pdev,
     if (AHardwareBuffer_isSupported(&desc)) {
         all_formats.emplace_back(
             VkSurfaceFormatKHR{format, VK_COLOR_SPACE_SRGB_NONLINEAR_KHR});
+        all_formats.emplace_back(
+            VkSurfaceFormatKHR{format, VK_COLOR_SPACE_PASS_THROUGH_EXT});
         if (colorspace_ext) {
             for (VkColorSpaceKHR colorSpace :
                  colorSpaceSupportedByVkEXTSwapchainColorspace) {
@@ -810,6 +812,8 @@ VkResult GetPhysicalDeviceSurfaceFormatsKHR(VkPhysicalDevice pdev,
     if (AHardwareBuffer_isSupported(&desc)) {
         all_formats.emplace_back(
             VkSurfaceFormatKHR{format, VK_COLOR_SPACE_SRGB_NONLINEAR_KHR});
+        all_formats.emplace_back(
+            VkSurfaceFormatKHR{format, VK_COLOR_SPACE_PASS_THROUGH_EXT});
         if (colorspace_ext) {
             for (VkColorSpaceKHR colorSpace :
                  colorSpaceSupportedByVkEXTSwapchainColorspace) {
@@ -837,6 +841,8 @@ VkResult GetPhysicalDeviceSurfaceFormatsKHR(VkPhysicalDevice pdev,
     if (AHardwareBuffer_isSupported(&desc)) {
         all_formats.emplace_back(
             VkSurfaceFormatKHR{format, VK_COLOR_SPACE_SRGB_NONLINEAR_KHR});
+        all_formats.emplace_back(
+            VkSurfaceFormatKHR{format, VK_COLOR_SPACE_PASS_THROUGH_EXT});
         if (colorspace_ext) {
             for (VkColorSpaceKHR colorSpace :
                  colorSpaceSupportedByVkEXTSwapchainColorspace) {
