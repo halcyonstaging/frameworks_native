@@ -604,6 +604,8 @@ private:
 
     // Returns the range of supported frame rates.
     FpsRange getSupportedFrameRateRangeLocked() const REQUIRES(mLock);
+
+    Fps mIdleFps = 60_Hz;
 };
 
 } // namespace android::scheduler
